@@ -136,17 +136,7 @@ nav{
     transform: rotate(45deg) translate(-8px, -9px);
 }
 
-.rodape{
-    background-color: #00BFA5;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    align-items: center;
 
-    /* alteração por fora (Lucas) */
-    margin-top: 40px;
-}
 
 .contati{
     
@@ -168,176 +158,62 @@ nav{
 
 main{
     justify-content: space-around;
-    height: 50vw;
+    height: 1vw;
 }
 
 /* CSS das próx págs daqui para baixo -----> (Lucas) 30/11/2022 */
-.txt1{
-    position: absolute;
-    width: 627px;
-    height: 144px;
-    left: 417px;
-    top: 229px;
-    font-family: 'Roboto Flex';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-    color: #A3A3A3;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    border: none;
 }
 
-.imagem{
-    position: absolute;
-    width: 399px;
-    height: 329px;
-    left: 198px;
-    top: 377px;
-    background: url(Image.png);
-    border: 6px solid #00BFA5;
-    border-radius: 65px;
+#app {
+    margin-top: 5%;
+    background-color: #00bfa64d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.txt2{
-    position: absolute;
-    width: 810px;
-    height: 19.16px;
-    left: 597px;
-    top: 377px;
-    font-family: 'Roboto Flex';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 33px;
-    text-align: center;
-    color: #00BFA5;
+label {
+    display: block;
+    margin-bottom: 8px;
 }
 
-#btn_inscrever{
-    position: absolute;
-    width: 162px;
-    height: 69px;
-    left: 325px;
-    top: 735px;
-    background: #00BFA5;
-    border-radius: 10px; 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    color: #FFFFFF;
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #057566;
+    color: #98ece1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-#hab1{
-    box-sizing: border-box;
-    position: absolute;
-    width: 449.46px;
-    height: 74.8px;
-    left: 782.58px;
-    top: 426.26px; 
-    background: #F5F5F5;
-    border: 3px solid #00BFA5;
-    border-radius: 20px;
+button:hover {
+    background-color: #00BFA5;
 }
 
-#hab2{
-    box-sizing: border-box;
-    position: absolute;
-    width: 449.46px;
-    height: 74.8px;
-    left: 782.58px;
-    top: 529.34px;  
-    background: #F5F5F5;
-    border: 3px solid #00BFA5;
-    border-radius: 20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-#hab3{
-    box-sizing: border-box;
-    position: absolute;
-    width: 449.46px;
-    height: 74.8px;
-    left: 782.58px;
-    top: 633.33px;   
-    background: #F5F5F5;
-    border: 3px solid #00BFA5;
-    border-radius: 20px;
-}
-
-#hab4{
-    box-sizing: border-box;
-    position: absolute;
-    width: 449.46px;
-    height: 74.8px;
-    left: 782.58px;
-    top: 728.2px;    
-    background: #F5F5F5;
-    border: 3px solid #00BFA5;
-    border-radius: 20px;
-}
-
-#hab1_txt{
-    position: absolute;
-    width: 297.71px;
-    height: 38.31px;
-    left: 857.98px;
-    top: 452.71px;  
-    font-family: 'Roboto Flex';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
+th, td {
+    border: 1px solid #00BFA5;
+    padding: 8px;
     text-align: center;
-    color: #000000;
 }
-
-#hab2_txt{
-    position: absolute;
-    width: 275.48px;
-    height: 37.4px;
-    left: 873.44px;
-    top: 557.62px; 
-    font-family: 'Roboto Flex';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;  
-    color: #000000;
-}
-
-#hab3_txt{
-    position: absolute;
-    width: 275.48px;
-    height: 37.4px;
-    left: 869.58px;
-    top: 664.34px;   
-    font-family: 'Roboto Flex';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-    color: #000000;
-}
-
-#hab4_txt{
-    position: absolute;
-    width: 275.48px;
-    height: 37.4px;
-    left: 869.58px;
-    top: 753.74px;
-    font-family: 'Roboto Flex';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-    color: #000000;
-}
-
-/* .container{
-
-} */

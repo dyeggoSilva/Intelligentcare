@@ -47,39 +47,28 @@
     <main>
         <!-- conteudo da pág deve ser colocado aqui na tag Main -->
 
-        <div class="container">
-            <p class="txt1">Oferecemos o treinamento de 4 habilidades que contribuem positivamente com a sua saúde mental e produtividade no trabalho:</p>
-
-            <img class="imagem" src="../../elementos/elementos gif/curso.svg">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIizhaUaLhwbyariWIQ-B71bBXb3p9rgVlFoKtc1u7trs7gw/viewform?usp=pp_url" target="_blank"><button id="btn_inscrever">Inscrever-se</button></a>
-    
-            <div class="habilidades">
-                <p class="txt2">Soft Skills que serão abordadas no cursos:</p>
-                <div id="hab1"></div><p id="hab1_txt">Boa Comunicação</p>
-                <div id="hab2"></div><p id="hab2_txt">Criatividade</p>
-                <div id="hab3"></div><p id="hab3_txt">Empatia</p>
-                <div id="hab4"></div><p id="hab4_txt">Inteligência Emocional</p>
-            </div>
+        <div id="app">
+           
+            <button onclick="listarPedidos()">Listar Cursos</button>
+        
+            <h2>Cursos</h2>
+            <table id="pedidosTable">
+                <thead>
+                    <tr>
+                        <th>Nome do Curso</th>
+                        <th>Carga Horária</th>
+                        <th>Grade do curso</th>
+                        <th>Nome do Professor</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="pedidosBody"></tbody>
+            </table>
         </div>
 
     </main>
+     
     
-    <footer class="rodape">
-        <!--  Rodapé-->
-        <article class="contat">
-            <h1 class="t1">Fale conosco</h1>
-            <a href="mailto: intelligentcare01@gmail.com"> <p class="t2">intelligentcare01@gmail.com</p></a>
-            <p class="t2">(81) 9.9898-9898</p>
-        </article>
-
-        <article class="soci">
-            <h1>Nossas redes</h1>
-           <a href="https://www.instagram.com/intelligentcare_/" target="_blank"><img class="rede" src="/elementos/instagram.svg" alt=""></a>
-            <a href="/index.html"><img class="rede" src="/elementos/twiter.svg" alt=""></a>
-            <!-- Final rodapé-->
-        </article>
-
-    </footer>
     
     <script src="/páginas/Curso/mobile.js"></script>
 </body>

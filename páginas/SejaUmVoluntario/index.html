@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/elementos/favicon.ico" type="image/x-icon">
     <title>Intelligent Care</title>
-    <link rel="stylesheet" href="/páginas/SejaUmVoluntario/style.css">
+    <link rel="stylesheet" href="/páginas/Curso/style.css">
     
 </head>
 <body>
@@ -15,7 +15,7 @@
             <!--  logo-->
             <a href="/index.html">
                 <img src="/elementos/ic.svg" alt="">
-                <!--  fFinal logo-->
+                <!--  Final logo-->
             </a>
 
             <div class="mobile">
@@ -23,7 +23,7 @@
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-                <!--  fFinal Botão mobile-->
+                <!--  Final Botão mobile-->
             </div>
             
             <ul class="nav-list">
@@ -31,53 +31,56 @@
                 <li><a href="/páginas/SobreNos/index.html">Sobre nós</a></li>
                 <li><a href="/páginas/Vantagens/index.html">Vantagens</a></li>
                 <li><a href="/páginas/Curso/index.html">Cursos</a></li>
-                <li><a href="/páginas/SejaUmVoluntario/">Seja um voluntário</a></li>
+                <li><a href="/páginas/SejaUmVoluntario/">Voluntário</a></li>
                 <!--  final Link paras as págs-->
             </ul>
             
             <ul class="nav-btn">  
                 <!--  Botão Login-->
-<!--                 <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeIizhaUaLhwbyariWIQ-B71bBXb3p9rgVlFoKtc1u7trs7gw/viewform?usp=pp_url" target="_blank"><button type="submit">Inscrever-se</button></a> -->
+<!--                 <a class="btn" href="/páginas/LogIn/index.html"><button type="submit">LogIn</button></a> -->
                 <!--  fFinal Botão Login-->
             </ul>
             
         </nav>  
     </header>
 
-  
-
     <main>
+        <!-- conteudo da pág deve ser colocado aqui na tag Main -->
 
-        <div class="card__title">
-            <h1 ></h1>
+        <div id="app">
+            <label for="pedido">Nome do Curso:</label>
+            <input type="text" id="pedido" placeholder="Nome do Curso">
+        
+            <label for="nome">Carga Horária:</label>
+            <input type="text" id="nome" placeholder="Carga Horária">
+        
+            <label for="produto">Grade do curso:</label>
+            <input type="text" id="produto" placeholder="Grade do curso">
+        
+            <label for="telefone">Nome do Professor:</label>
+            <input type="text" id="telefone" placeholder="Nome do Professor">
+        
+            <button onclick="criarPedido()">Criar Curso</button>
+            <button onclick="listarPedidos()">Listar Cursos</button>
+        
+            <h2>Pedidos</h2>
+            <table id="pedidosTable">
+                <thead>
+                    <tr>
+                        <th>Nome do Curso</th>
+                        <th>Carga Horária</th>
+                        <th>Grade do curso</th>
+                        <th>Nome do Professor</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="pedidosBody"></tbody>
+            </table>
         </div>
-        <section class="card">
-            <div class="card__component">
-                <div class="class__component_img">
-                    <img src="/elementos/imagens/voluntário.jpg">
-        </section>
 
     </main>
     
-    <footer class="rodape">
-        <!--  Rodapé-->
-        <article class="contat">
-            <h1 class="t1">Fale conosco</h1>
-            <p class="t2">intelligentcare01@gmail.com</p>
-            <p class="t2">(81) 9.9898-9898</p>
-        </article>
-
-        <article class="soci">
-            <h1>Nossas redes</h1>
-            <a href="https://www.instagram.com/intelligentcare_/" target="_blank"><img class="rede" src="/elementos/instagram.svg" alt=""></a>
-            <a href="/index.html"><img class="rede" src="/elementos/twiter.svg" alt=""></a>
-            <!--  Final rodapé-->
-        </article>
-
-    </footer>
-
-    
-    <script src="/páginas/SejaUmVoluntario/mobile.js"></script>
+    <script src="/páginas/Curso/mobile.js"></script>
 </body>
 
 </html>

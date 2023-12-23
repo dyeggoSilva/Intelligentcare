@@ -26,7 +26,6 @@ nav button{
 
 .nav-btn{
     margin-left: 350px;
-    
 }
 
 a {
@@ -137,14 +136,7 @@ nav{
     transform: rotate(45deg) translate(-8px, -9px);
 }
 
-.rodape{
-    background-color: #00BFA5;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    align-items: center;
-}
+
 
 .contati{
     
@@ -165,72 +157,63 @@ nav{
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    padding:30px 15%; 
-    height: 60rem;  
-    
+    justify-content: space-around;
+    height: 1vw;
 }
 
-
-/* CSS das próx pág´s daqui para baixo*/
-
-
-card {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.card__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.card__title >h1 {
-    padding: 30px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #00BFA5;
-}
-
-.card__component {
-    display: flex;
+/* CSS das próx págs daqui para baixo -----> (Lucas) 30/11/2022 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 550px;
-    border-radius: 10px;
-    background-color: #F5F5F5;
+    height: 80vh;
+    border: none;
 }
 
-.class__component_img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 550px;
-    border-radius: 10px;
-    background-color: #F5F5F5;
+#app {
+    margin-top: 5%;
+    background-color: #00bfa64d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media(max-width:1130px){
-    .card__component {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        height: fit-content;
-        padding: 20px 0px ;
-        border-radius: 10px;
-        background-color: #F5F5F5;       
-    }
+label {
+    display: block;
+    margin-bottom: 8px;
+}
 
-    .class__component_img {
-        margin: 20px 40px;
-    }
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #057566;
+    color: #98ece1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00BFA5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #00BFA5;
+    padding: 8px;
+    text-align: center;
 }
