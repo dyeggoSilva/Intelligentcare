@@ -43,7 +43,7 @@ const mobileNavbar = new MobileNavbar(
 
 
 
-const apiUrl = 'http://localhost:3000';
+const apiUrl = 'https://api-intelligent-care.dyeggochocolat.repl.co';
     
 function criarPedido() {
     const pedido = document.getElementById('pedido').value;
