@@ -43,7 +43,7 @@ const mobileNavbar = new MobileNavbar(
 
 
 
-const apiUrl = 'https://registro-de-pedio-api.dyeggochocolat.repl.co';
+const apiUrl = 'http://localhost:3000';
     
 function criarPedido() {
     const pedido = document.getElementById('pedido').value;
@@ -51,16 +51,16 @@ function criarPedido() {
     const produto = document.getElementById('produto').value;
     const telefone = document.getElementById('telefone').value;
 
-    fetch(`${apiUrl}/pedidos`, {
+    fetch(`${apiUrl}/cursos/add`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            pedido: pedido,
-            nome: nome,
-            produto: produto,
-            telefone: telefone,
+            nome: pedido,
+            carga: nome,
+            grade: produto,
+            professor: telefone,
         }),
     })
     .then(response => response.json())
@@ -74,7 +74,7 @@ function criarPedido() {
 }
 
 function listarPedidos() {
-    fetch(`${apiUrl}/pedidos`)
+    fetch(`${apiUrl}/cursos`)
     .then(response => response.json())
     .then(data => {
         const pedidosBody = document.getElementById('pedidosBody');
@@ -83,10 +83,10 @@ function listarPedidos() {
         data.forEach(pedido => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${pedido.pedido}</td>
                 <td>${pedido.nome}</td>
-                <td>${pedido.produto}</td>
-                <td>${pedido.telefone}</td>
+                <td>${pedido.carga}</td>
+                <td>${pedido.grade}</td>
+                <td>${pedido.professor}</td>
                 <td><button onclick="at(${pedido.id})">Atualizar</button> <button onclick="ex(${pedido.id})">Excluir</button></td>
             `;
             pedidosBody.appendChild(row);
@@ -104,16 +104,16 @@ function at(id) {
     const produto = document.getElementById('produto').value;
     const telefone = document.getElementById('telefone').value;
 
-    fetch(`${apiUrl}/dados/${id}`, {
+    fetch(`${apiUrl}/cursos/update/${id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            pedido: pedido,
-            nome: nome,
-            produto: produto,
-            telefone: telefone,
+            nome: pedido,
+            carga: nome,
+            grade: produto,
+            professor: telefone,
         }),
     })
 
@@ -129,7 +129,7 @@ function at(id) {
 }
 
 function ex(id) {
-    fetch(`${apiUrl}/dados/${id}`, {
+    fetch(`${apiUrl}/cursos/del/${id}`, {
         method: 'DELETE',
     })
     .then(response => response.json())
