@@ -7,144 +7,42 @@
     <link rel="shortcut icon" href="/elementos/favicon.ico" type="image/x-icon">
     <title>Intelligent Care</title>
     <link rel="stylesheet" href="/páginas/LogIn/style.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    <header>
-        <nav>
-            <!--  logo-->
-            <a href="/index.html">
-                <img src="/elementos/ic.svg" alt="">
-                <!--  fFinal logo-->
-            </a>
-
-            <div class="mobile">
-                <!--  botão mobole-->
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-                <!--  fFinal Botão mobile-->
-            </div>
-            
-            <ul class="nav-list">
-                <!--  Link para as págs-->
-                <li><a href="/páginas/SobreNos/index.html">Sobre nós</a></li>
-                <li><a href="/páginas/Vantagens/index.html">Vantagens</a></li>
-                <li><a href="/páginas/Curso/index.html">Cursos</a></li>
-                <li><a href="/páginas/SejaUmVoluntario/">Seja um voluntário</a></li>
-                <!--  final Link paras as págs-->
-            </ul>
-            
-            <ul class="nav-btn">  
-                <!--  Botão Login-->
-                <a class="btn" href="/páginas/LogIn/index.html"><button type="submit">LogIn</button></a>
-                <!--  fFinal Botão Login-->
-            </ul>
-            
-        </nav>  
-    </header>
-
-  <style>
-    .container{
-        display: grid;
-        gap: 20px;
-        grid-template-areas: '1'
-        "1";
-
-    }
-
-    .image,.login{
-        padding: 50px;
-        /* background-color: aqua; */
-
-    }
-
-    input{
-        height: 40px;
-        width: 100%;
-        margin-bottom: 20px;
-        border-radius: 25px;
-        margin-top: 5px;
-        padding-left: 20px;
-        outline-color: gray;
-        border: 2px solid gray;
-
-
-    }
-    button{
-
-        height: 40px;
-        width: 40%;
-        background-color:#00BFA5;
-        border-radius: 20px;
-        color: white;
-        border: none;
-        
-    }
-    .btn-save{
-        display: flex;
-        justify-content: center;
-    }
-  </style>
 
     <main>
         
-        <div class="container">
-            <div class="image">
-                <img  width="200" src="/elementos/elementos gif/login.svg" alt="">
-
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Faça seu login<br>E entre para o nosso time</h1>
+                <img src="/elementos/elementos gif/login.svg" class="left-login-img" alt="Animação em 2D de uma astronauta em um traje verde flutuando entre estrelas e luas">
             </div>
-            <div class="login">
-                <div>
-                    <div>
-                        <label for="email">email</label><br>
-                        <input placeholder="Email" type="text" id="email" name="email"> 
-
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>LOGIN</h1>
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Digite seu usuário">
                     </div>
-
-                    <div>
-                        <label for="password">Senha</label><br>
-                        <input placeholder="Senha" type="password" id="password" name="password"> 
-
+                    <div class="textfield"> 
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Digite a sua senha">
                     </div>
-                    <div class="btn-save">
-                        <button>Entrar</button>
-                    </div>
+                    <a  href="../../index.html"><button class="btn-login">LOGIN</button></a>  
                 </div>
-
+    
             </div>
+    
         </div>
-
-        <!-- <div class="card__title">
-            <h1 ></h1>
-        </div>
-        <section class="card">
-            <div class="card__component">
-                <div class="class__component_img">
-                    <img src="/elementos/imagens/login.jpg">
-        </section> -->
-
-
+    
 
     </main>
-    
-    <footer class="rodape">
-        <!--  Rodapé-->
-        <article class="contat">
-            <h1 class="t1">Fale conosco</h1>
-            <p class="t2">inteligentcare01@gmail.com</p>
-            <p class="t2">(81) 9.9898-9898</p>
-        </article>
-
-        <article class="soci">
-            <h1>Nossas redes</h1>
-            <a href="/index.html"><img class="rede" src="/elementos/instagram.svg" alt=""></a>
-            <a href="/index.html"><img class="rede" src="/elementos/twiter.svg" alt=""></a>
-            <!--  Final rodapé-->
-        </article>
-
-    </footer>
-
     
     <script src="/páginas/LogIn/mobile.js"></script>
 </body>
