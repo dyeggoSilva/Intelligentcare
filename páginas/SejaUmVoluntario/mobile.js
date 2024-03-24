@@ -43,7 +43,7 @@ const mobileNavbar = new MobileNavbar(
 
 
 
-const apiUrl = 'https://api-intelligent-care.dyeggochocolat.repl.co';
+const apiUrl = 'https://8fd39f16-cd6d-48ce-91b7-3de487e00f9d-00-y2aoiiakagho.worf.replit.dev/';
     
 function criarPedido() {
     const pedido = document.getElementById('pedido').value;
@@ -101,21 +101,16 @@ function listarPedidos() {
 
 function at(id) {
 
-    const pedido = document.getElementById('pedido').value;
-    const nome = document.getElementById('nome').value;
-    const produto = document.getElementById('produto').value;
-    const telefone = document.getElementById('telefone').value;
-
     fetch(`${apiUrl}/cursos/update/${id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            pedido: pedido,
-            nome: nome,
-            produto: produto,
-            telefone: telefone,
+            nome: pedido,
+            carga: nome,
+            grade: produto,
+            professor: telefone,
         }),
     })
 
@@ -129,6 +124,7 @@ function at(id) {
     });
     
 }
+
 
 function ex(id) {
     fetch(`${apiUrl}/cursos/del/${id}`, {
