@@ -43,7 +43,7 @@ const mobileNavbar = new MobileNavbar(
 
 
 
-const apiUrl = 'https://8fd39f16-cd6d-48ce-91b7-3de487e00f9d-00-y2aoiiakagho.worf.replit.dev';
+const apiUrl = 'https://api-intelligentcare-java.onrender.com';
     
 function criarPedido() {
     const pedido = document.getElementById('pedido').value;
